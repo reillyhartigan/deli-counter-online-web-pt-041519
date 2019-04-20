@@ -4,11 +4,11 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    line = "The line is currently:"
+    current_line = "The line is currently:"
     katz_deli.each.with_index(1) do |name, i|
-      line << " #{i},. #{person}"
+      current_line << " #{i},. #{person}"
   end
-  puts line
+  puts current_line
 end
 
 def take_a_number(katz_deli, name)
@@ -24,5 +24,4 @@ def now_serving(katz_deli)
    puts "Currently serving #{katz_deli.first}"
    katz_deli.shift
  end
-end
 end
