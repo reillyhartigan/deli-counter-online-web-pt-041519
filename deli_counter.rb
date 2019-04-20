@@ -1,11 +1,9 @@
 # Write your code here.
 
-def line(katz_deli)
-  if katz_deli.empty?
+def line(array)
+  if array.empty?
     puts "The line is currently empty"
   else
-    line = katz_deli.join(katz_deli.index + ".")
-    puts "The line is currently" + line
   end
 end
 
